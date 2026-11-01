@@ -1,0 +1,1 @@
+Maple Cartel V1: Default theme only. Removed visible Monopoly dashboard, theme dropdown, and Grind Dashboard header item. Existing tracking, potion, OCR and quickslots source files retained.

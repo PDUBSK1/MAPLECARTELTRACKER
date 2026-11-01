@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1672 941" width="1672" height="941">
+<defs>
+ <linearGradient id="ink"><stop stop-color="#101917"/><stop offset=".56" stop-color="#0d1513"/><stop offset="1" stop-color="#121919"/></linearGradient>
+ <linearGradient id="control"><stop stop-color="#11191a"/><stop offset=".48" stop-color="#080d0d"/><stop offset="1" stop-color="#141819"/></linearGradient>
+ <linearGradient id="paint"><stop stop-color="#9eff39"/><stop offset=".45" stop-color="#e0ff5c"/><stop offset="1" stop-color="#78c828"/></linearGradient>
+ <linearGradient id="gold"><stop stop-color="#fff15f"/><stop offset="1" stop-color="#f4c22b"/></linearGradient>
+ <filter id="soft" x="-12%" y="-35%" width="124%" height="170%"><feGaussianBlur stdDeviation="7"/></filter>
+ <pattern id="inkdots" width="13" height="13" patternUnits="userSpaceOnUse"><circle cx="3" cy="4" r=".75" fill="#bbcbb9" opacity=".12"/></pattern>
+</defs>
+<!-- The nav is an actual illustrated plate; controls and theme remain native clickable elements over it. -->
+<path d="M73 282 L84 275 L1452 278 L1588 274 L1596 281 L1595 318 L1585 331 L81 329 L70 321 Z" fill="#000" opacity=".7" transform="translate(3 5)"/>
+<path d="M74 283 L84 277 L860 276 L1158 280 L1590 275 L1597 282 L1594 322 L1583 331 L99 329 L70 321 Z" fill="url(#control)" stroke="#ecefe7" stroke-width="3" stroke-linejoin="round"/>
+<path d="M85 284 L1584 282" stroke="#b2ef58" stroke-width="2.4" opacity=".84"/>
+<path d="M76 320 L90 326 L388 326 L429 331 L1012 327 L1177 331 L1580 326" fill="none" stroke="#96da37" stroke-width="3" opacity=".76"/>
+<path d="M80 332 l55 -2 l-15 7 l138 -5 m854 -1 l104 1 l-17 5 l120 -5" fill="none" stroke="#e6e8d8" stroke-width="2.4" opacity=".82"/>
+<path d="M96 279 h92 l-27 3 h-57 M1478 330 h70 l-18 3" stroke="#fd54a3" stroke-width="4" opacity=".93"/>
+<path d="M92 327 l-5 11 M99 329 l-1 8 M1580 327 l-2 9" stroke="#b1ff44" stroke-width="3.3" stroke-linecap="round"/>
+</svg>
