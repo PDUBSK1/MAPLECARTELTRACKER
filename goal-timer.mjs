@@ -35,10 +35,6 @@ function update(){
  text('monoGoalFinish','FINISH '+finish);text('defaultGoalFinish',finish);
  text('goalExpLeft',expLeft===null?'—':expLeft.toLocaleString('en-US'));
  text('goalTimeLeft',remaining);text('goalFinishTime',finish);
- // Read-only economy insight: estimated potion cost to finish *current* level.
- const costText=$('potionTotalRate')?.textContent||'';
- const perHour=costText.includes('—')?null:num(costText);
- const budget=timeSeconds!==null&&perHour!==null?timeSeconds/3600*perHour:null;
- text('mcGoalBudget',budget===null?'—':Math.round(budget).toLocaleString('en-US'));
+
 }
 update();setInterval(update,3000);
