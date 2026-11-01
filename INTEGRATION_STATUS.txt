@@ -1,0 +1,11 @@
+Maple Cartel V1 / integrated potion-cost panel
+
+Original app.mjs, core.mjs, vision.mjs, Maple OCR and CSS are preserved; only small hooks were added to app.mjs/index.html/street-theme.css.
+
+The potion price/setup panel and cost accounting are integrated. It does NOT yet automatically read quickslot numbers from captured game frames, because the required quickslot image-recognition module was not included in the browser capture and is not part of the original six OCR modules. This version deliberately does not fabricate usage counts or claim a zero cost is measured.
+
+The original game EXP detector is retained, but real in-game behavior cannot be confirmed here. OCR runtime/model files under assets/ocr were not in either HAR; local OCR may not work on independent hosting without recovering those files.
+
+DO NOT REPLACE THE WORKING LIVE WEBSITE until all OCR assets and quickslot detection have been recovered and tested.
+
+Use a local static HTTP server to preview: python -m http.server 8000

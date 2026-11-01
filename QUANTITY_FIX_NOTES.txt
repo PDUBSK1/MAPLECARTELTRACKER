@@ -1,0 +1,9 @@
+Maple Cartel V1 — quantity reading patch
+
+Problem: the quickslot crop is often 16–20 pixels tall, while the game stack digits use a native ~12px font. The OCR previously selected a large-font reader based on overall crop height.
+
+Fix: scan native-height subrows with the original small-font recognizer and require repeated matching observations. Preserve the original large-font fallback and EXP/level pipeline.
+
+Safety: questionable or conflicting counts remain unreadable rather than charging false potion expenses.
+
+Not yet tested against a live changing stack. Load from a NEW localhost port, share the game window, and check Remaining before and after using one potion.

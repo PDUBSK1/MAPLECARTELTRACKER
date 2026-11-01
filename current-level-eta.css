@@ -1,0 +1,6 @@
+/* Automatic current-level ETA, no target input or edit buttons. */
+.mc-default-goal,.mc-goal-bar{cursor:default!important}
+.mc-default-goal .mc-goal-edit{display:none!important}
+.mc-default-goal{gap:16px;flex-wrap:wrap}
+.mc-goal-bar{justify-content:space-between!important}
+.mc-goal-bar>span:nth-child(2){text-align:center}

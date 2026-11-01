@@ -1,0 +1,40 @@
+
+/* SINGLE ownership of theme controls. No tracking engine modifications. */
+html[data-cartel-theme="street"] .shell{position:relative!important}
+html[data-cartel-theme="street"] .shell>.theme-switcher{
+ display:flex!important; position:absolute!important; top:13px!important;right:18px!important;left:auto!important;bottom:auto!important;
+ z-index:300!important; align-items:center!important; justify-content:space-between!important; gap:9px!important;
+ width:230px!important;min-width:230px!important;max-width:230px!important;height:42px!important;
+ padding:5px 7px 5px 11px!important; margin:0!important; box-sizing:border-box!important;
+ background:linear-gradient(125deg,#27202d,#121518)!important;border:1px solid #d7ac65!important;border-radius:11px!important;
+ box-shadow:0 3px 0 #0009,0 0 0 1px #ffffff16 inset!important; transform:none!important;
+ overflow:visible!important;white-space:nowrap!important;
+}
+html[data-cartel-theme="street"] .shell>.theme-switcher label{font:800 10px/1.15 Arial,sans-serif!important;letter-spacing:0!important;color:#ffe5ac!important;white-space:nowrap!important;flex:0 0 auto!important}
+html[data-cartel-theme="street"] .shell>.theme-switcher select{
+ appearance:auto!important;-webkit-appearance:menulist!important;display:block!important;visibility:visible!important;opacity:1!important;
+ flex:0 0 111px!important;width:111px!important;min-width:111px!important;max-width:111px!important;height:30px!important;
+ padding:2px 6px!important; margin:0!important;box-sizing:border-box!important;
+ border:1px solid #a8d86a!important;border-radius:7px!important;background:#121d18!important;color:#fff!important;
+ font:700 12px/1.2 Arial,sans-serif!important;letter-spacing:normal!important;text-indent:0!important;text-overflow:clip!important;
+}
+html[data-cartel-theme="street"] .shell main{padding-top:0!important}
+html[data-cartel-theme="street"] .shell aside{min-height:0!important}
+html[data-cartel-theme="street"] .shell main>.theme-switcher{display:none!important}
+html[data-cartel-theme="monopoly"] .shell>.theme-switcher{display:none!important}
+/* Monopoly artboard: width is explicit to keep the full selected name visible. */
+html[data-cartel-theme="monopoly"] .approved-theme{
+ display:flex!important;align-items:center!important;justify-content:space-between!important;
+ box-sizing:border-box!important;position:absolute!important;left:auto!important;right:21px!important;top:19px!important;
+ width:294px!important;min-width:294px!important;max-width:294px!important;height:47px!important;padding:5px 8px!important;
+ gap:8px!important;overflow:visible!important;z-index:200!important;transform:none!important;
+ background:linear-gradient(110deg,#241f27,#111315)!important;border:1px solid #d6b564!important;border-radius:11px!important;
+}
+html[data-cartel-theme="monopoly"] .approved-theme label{font:800 11px/1.2 Arial,sans-serif!important;letter-spacing:0!important;color:#ffdf91!important;white-space:nowrap!important;flex:0 0 auto!important}
+html[data-cartel-theme="monopoly"] .approved-theme select{
+ display:block!important;visibility:visible!important;opacity:1!important;appearance:auto!important;-webkit-appearance:menulist!important;
+ flex:1 1 auto!important;width:165px!important;min-width:165px!important;max-width:none!important;height:33px!important;
+ padding:4px 6px!important;margin:0!important;box-sizing:border-box!important;background:#17221b!important;color:#fff!important;
+ border:1px solid #9bdb6a!important;border-radius:8px!important;font:700 14px/1.2 Arial,sans-serif!important;letter-spacing:normal!important;text-indent:0!important;
+}
+@media(max-width:670px){html[data-cartel-theme="street"] .shell>.theme-switcher{position:relative!important;inset:auto!important;margin:8px 12px!important;justify-self:end!important;width:230px!important}}

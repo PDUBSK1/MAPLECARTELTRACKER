@@ -1,0 +1,38 @@
+{
+  "preserved_count": 19,
+  "hashes": {
+    "app.mjs": "7c10f34d18b7ccbee3dae05b85570c6cbbedef67dbcdd6987ee1a6b9e32dd416",
+    "core.mjs": "bf39d56c0761e00c9cc7ba321deb76fc2b33dc2b1e9a2cb914c91bb158b12d50",
+    "vision.mjs": "539ad5df8b7162d994317d5ffd97a9007bc46d8a96d8f2142233d3d6561fa7fc",
+    "quantity-diagnostic.js": "4e077fb5ec7086b19de2896f0700acd195a8899f2b1abd9e3ac781ddb4ce96a0",
+    "vendor/maple-track/quickslot-icon.js": "f4f8aa9854e0d305eeefc8b715b0d88af5dc9b917b3cd2d467db714f20ee511d",
+    "vendor/maple-track/quickslot-layout.js": "3f73abd5326dcc22f7e1893d1d44272d983c010b171ab90badcea04d25d1d0b3",
+    "vendor/maple-track/quickslots.js": "71b4c9c53d5c7e77f9fc6fb1a75d8e8c218bad9a65f4f0fced18e5a12e8dd96e",
+    "vendor/maple-track/recognition.js": "2216419e8f861d54e6340887610e732e3966f123c9410f0b4bdf525a800df26c",
+    "vendor/maple-track/level-ocr.js": "73e43a6fc70ad865d09ba0f57b161c5f171aa3fba0caa2d31dada80f9503fee2",
+    "vendor/maple-track/hud-ocr.js": "b0e9657355f27ef238c5d70dd145aa8b93e2d7d77d49d93b12060f454d2776a8",
+    "vendor/maple-track/session.js": "7c5e519e2226a50a81a10b925f84fc265bdc42ecad672ad320983b731a46279d",
+    "vendor/maple-track/local-ocr.js": "99466a8e7e87c3dc8cf9a2d647c6177c5802a0623b509dd8a6b4dd443b91d488",
+    "vendor/maple-track/quickslot-font.js": "8bfcf5bb01138f44ec76aabd170b42a1c62532edf776c820983bf3a2bd97e7a7",
+    "vendor/maple-track/hud-regions.js": "fb820fdaa085a749517c75c1afca8a64f7773e87f7ed8d681c4d583d10d04e8f",
+    "vendor/maple-track/quickslot-ocr.js": "ca0c88ae09ff2376ab1a0ce53d223de14fcc4efbf27784bff1ad7509279f403f",
+    "vendor/maple-track/quickslot-small.js": "a710a85c9f2eac881481de86c17a583dd5894e691a280f2592f335efb6c6ea07",
+    "vendor/maple-track/quickslot-session.js": "8629c5a553dd6b0e5531e1aa63df22735efebb3d7a15cd517535552bce1d252a",
+    "vendor/maple-track/quickslot-worker.js": "531081ca4293e3edb4bc15173f82c13128226eed9c1a130774b22f0763e8d231",
+    "vendor/maple-track/potion-costs.js": "e92703e5afe2d2c37229f381d09299693b671e7f3a9d94cffb415139950c3422"
+  },
+  "new_assets": [
+    "art/monopoly/wall.svg",
+    "art/monopoly/meso-stacks.svg",
+    "art/monopoly/control-frame.svg",
+    "art/monopoly/level-frame.svg",
+    "art/monopoly/potion-frame.svg",
+    "art/monopoly/potions.svg",
+    "art/monopoly/stat-time-frame.svg",
+    "art/monopoly/chart-frame.svg",
+    "art/monopoly/approved-hero.webp",
+    "art/monopoly/hourglass.svg",
+    "art/monopoly/stat-exp-frame.svg",
+    "art/monopoly/stat-session-frame.svg"
+  ]
+}

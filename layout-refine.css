@@ -1,0 +1,34 @@
+
+/* Default theme: predictable, aligned dashboard grid. No changes to detection. */
+html[data-cartel-theme="street"] main{grid-template-columns:repeat(12,minmax(0,1fr))!important;column-gap:14px!important;row-gap:12px!important;align-items:stretch!important}
+html[data-cartel-theme="street"] main>.heading,
+html[data-cartel-theme="street"] main>.controlbar,
+html[data-cartel-theme="street"] main>.level-panel,
+html[data-cartel-theme="street"] main>.stats-grid,
+html[data-cartel-theme="street"] main>.capture-panel,
+html[data-cartel-theme="street"] main>footer,
+html[data-cartel-theme="street"] main>.theme-switcher,
+html[data-cartel-theme="street"] main>.monopoly-hero,
+html[data-cartel-theme="street"] main>#notice,
+html[data-cartel-theme="street"] main>.mc-default-goal{grid-column:1/-1!important;grid-row:auto!important}
+html[data-cartel-theme="street"] main>.middle-grid{grid-column:1/span 6!important;grid-row:auto!important;min-height:0!important;display:flex!important}
+html[data-cartel-theme="street"] main>#potionPanel{grid-column:7/-1!important;grid-row:auto!important;margin:0!important;align-self:stretch!important}
+html[data-cartel-theme="street"] main>.middle-grid>.chart-panel{width:100%;min-height:330px;height:100%!important;box-sizing:border-box}
+html[data-cartel-theme="street"] main>#potionPanel>.mc-live-potions{margin:0!important;height:100%;box-sizing:border-box;display:flex;flex-direction:column}
+html[data-cartel-theme="street"] main>.stats-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important}
+html[data-cartel-theme="street"] main>.level-panel{min-height:178px}
+html[data-cartel-theme="street"] main>.mc-default-goal{margin:0!important}
+html[data-cartel-theme="street"] main>.theme-switcher{position:relative!important;top:auto!important;right:auto!important;left:auto!important;justify-self:end!important;width:max-content!important;max-width:100%!important;z-index:15!important}
+html[data-cartel-theme="street"] main>.heading{min-height:0!important}
+html[data-cartel-theme="street"] .theme-switcher,html[data-cartel-theme="monopoly"] .approved-theme{display:flex!important;align-items:center!important;gap:9px!important;background:linear-gradient(130deg,#24212f,#101116)!important;border:1px solid #dbb45b!important;border-radius:14px!important;padding:7px 10px!important;box-shadow:0 5px 0 #0007,0 0 0 1px #ffffff17 inset!important}
+html[data-cartel-theme="street"] .theme-switcher label,html[data-cartel-theme="monopoly"] .approved-theme label{font-size:10px!important;letter-spacing:.12em!important;color:#ffe49a!important;font-weight:900!important}
+html[data-cartel-theme="street"] #cartelTheme,html[data-cartel-theme="monopoly"] #monopolyTheme{background:#141719!important;border:1px solid #7bba57!important;color:#fff!important;border-radius:9px!important;padding:9px 29px 9px 12px!important;font-size:13px!important;font-weight:900!important;cursor:pointer!important}
+.mc-economy-extra{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:8px 0 12px}
+.mc-economy-extra>div{background:#0f1715;border:1px solid #607c58;border-radius:8px;padding:10px 12px;min-width:0}
+.mc-economy-extra span{display:block;font:800 10px ui-monospace,monospace;letter-spacing:.07em;color:#d2bdf1}
+.mc-economy-extra strong{display:block;margin-top:5px;color:#d5ff77;font:900 clamp(18px,2vw,27px) ui-monospace,monospace;overflow-wrap:anywhere}
+html[data-cartel-theme="monopoly"] .mc-economy-extra{display:none!important}
+@media(max-width:1050px){html[data-cartel-theme="street"] main>.middle-grid,html[data-cartel-theme="street"] main>#potionPanel{grid-column:1/-1!important}html[data-cartel-theme="street"] main>.stats-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important}}
+@media(max-width:650px){html[data-cartel-theme="street"] main>.stats-grid{grid-template-columns:1fr!important}}
+
+.mc-economy-extra{grid-template-columns:1fr!important}

@@ -1,0 +1,116 @@
+/* Maple Cartel V1 — visual quality only. No OCR, session, capture, or event logic. */
+:root { color-scheme: dark; text-rendering: optimizeLegibility; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.shell { width: min(1320px, calc(100% - 64px)); }
+main { min-width: 0; }
+.heading { gap: 24px; }
+.heading h1 { text-wrap: balance; }
+.stat,.panel,.controlbar,.potion-container .mc-live-potions { isolation: isolate; }
+.stat, .panel { border-color: #615369; }
+.stat { padding: clamp(20px,2vw,29px); min-width:0; }
+.stat-top,.stat-bottom,.chart-key,.session-id small { font-size: max(11px, 0.76rem); letter-spacing:.025em; line-height:1.5; }
+.big-number,.stat .number,.mc-potion-metrics strong { font-variant-numeric:tabular-nums lining-nums; }
+.number.mono { font-size: clamp(25px, 3vw, 40px); }
+.panel-head { gap: 12px; }
+.panel-head .eyebrow { font-size:11px; letter-spacing:.13em; }
+.panel-head h2 { line-height:1.3; }
+.primary,.secondary,.ghost,.text-button,.mc-potion-controls button { min-height:40px; }
+button,select,input { font:inherit; }
+button:focus-visible,select:focus-visible,input:focus-visible,a:focus-visible { outline: 3px solid #ffe22e; outline-offset: 3px; }
+.potion-container .mc-live-potions { padding:clamp(18px,2.5vw,32px); }
+.potion-container .mc-potion-metrics { gap:14px; }
+.potion-container .mc-potion-metrics>div { min-width:0; padding:19px 17px; border-color:#6a5776; }
+.potion-container .mc-potion-metrics strong { margin-top:16px; letter-spacing:-.045em; }
+.potion-container #itemTrackingState { font-size:13px; line-height:1.6; color:#d0c4d8; }
+.potion-container .mc-potion-grid { gap:15px; }
+.potion-container .quickslot-card { padding:17px; gap:11px; border-color:#6b5878; }
+.potion-container .quickslot-card-head { font-size:13px; }
+.potion-container .quickslot-card select,.potion-container .quickslot-card input { width:100%; box-sizing:border-box; min-height:41px; font-size:13px; }
+.potion-container .quickslot-card label { font-size:11px; line-height:1.45; }
+.potion-container .quickslot-count,.potion-container .quickslot-usage,.potion-container .quickslot-status { font-size:12px; line-height:1.6; overflow-wrap:anywhere; }
+.potion-container #quickslotLayoutState { font-size:12px; }
+.potion-container .mc-potion-controls label { font-size:13px; }
+#captureMeta,.capture-foot { line-height:1.5; }
+#captureWrap { min-width:0; overflow:hidden; }
+#preview { max-width:100%; height:auto; }
+footer { gap:12px; }
+/* Preserve crisp game pixels; let decorative text remain naturally antialiased. */
+.quickslot-card canvas, .quickslot-card img { image-rendering:pixelated; }
+@media (max-width: 1100px) {
+ .shell { width:min(100% - 42px, 1320px); }
+ .stats-grid { gap:14px; }
+ .middle-grid { gap:14px; }
+ .potion-container .mc-potion-metrics { grid-template-columns:repeat(2,minmax(0,1fr)); }
+}
+@media (max-width: 740px) {
+ .shell { width:calc(100% - 28px); }
+ aside { gap:12px; flex-wrap:wrap; }
+ .brand img { width:min(270px,55vw); }
+ .heading { padding:26px 0; }
+ .stats-grid,.middle-grid { grid-template-columns:1fr; }
+ .stat { min-height:unset; }
+ .controlbar { padding:15px; }
+ .potion-container .mc-potion-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+ .potion-container .mc-potion-controls { gap:10px; }
+ .potion-container .mc-potion-controls label { width:100%; margin-right:0; }
+ .potion-container .mc-potion-metrics>div { min-height:112px; }
+}
+@media (max-width:480px) {
+ .shell { width:calc(100% - 20px); }
+ .potion-container .mc-live-potions { padding:16px 12px; }
+ .potion-container .mc-potion-titlebar h2 { font-size:clamp(27px,8vw,38px); }
+ .potion-container .mc-potion-grid { grid-template-columns:1fr; }
+ .potion-container .mc-potion-metrics { gap:9px; }
+ .potion-container .mc-potion-metrics>div { padding:15px 11px; }
+ .potion-container .mc-potion-metrics strong { font-size:clamp(22px,6vw,30px); }
+ .potion-container .mc-potion-controls button { flex:1; }
+}
+@media (prefers-reduced-motion: reduce) { *,*::before,*::after { scroll-behavior:auto!important; transition-duration:.01ms!important; animation-duration:.01ms!important; } }
+
+/* Compact desktop cockpit: layout-only. Tracking logic untouched. */
+@media (min-width: 1101px) {
+ .shell {width:min(1540px,calc(100% - 42px))}
+ aside {padding:10px 0;min-height:56px}
+ .brand img{width:165px;height:auto;max-height:56px;object-fit:contain}
+ .heading{padding:5px 0 9px;min-height:38px}
+ .heading .session-id{margin-left:auto}
+ .controlbar{padding:10px 16px;margin-bottom:12px}
+ main{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(380px,.92fr);gap:12px 16px;align-items:start}
+ main>.heading,main>.controlbar,main>#notice,main>.stats-grid,main>.capture-panel,main>footer{grid-column:1/-1}
+ .stats-grid{gap:12px}
+ .stat{min-height:108px;padding:14px 19px}
+ .big-number{font-size:clamp(32px,3.3vw,49px);margin:9px 0 7px}
+ .stat .number{font-size:clamp(29px,3vw,43px);margin:11px 0 8px}
+ .stat .number.mono{font-size:clamp(25px,2.45vw,36px);margin:14px 0 10px}
+ .stat-bottom{font-size:10px}
+ .middle-grid{grid-column:1;grid-row:auto;display:grid;grid-template-columns:minmax(0,1fr) minmax(255px,.85fr);gap:12px;margin-top:0}
+ .middle-grid>.panel{min-width:0}
+ .panel-head{padding:12px 15px}
+ .panel-head h2{font-size:15px;margin-top:4px}
+ .chart{height:175px;margin:0 15px}
+ .chart-footer{padding:9px 15px}
+ .eta-headline{padding:6px 12px}
+ .eta-headline strong{font-size:clamp(28px,3vw,43px)}
+ .level-main,.progress-track,.progress-label,.level-details{margin-left:13px;margin-right:13px}
+ .level-panel .muted{display:none}
+ #potionPanel{grid-column:2;grid-row:auto;margin:0;min-width:0}
+ #potionPanel .mc-live-potions{padding:13px 15px}
+ #potionPanel .mc-potion-titlebar{margin-bottom:9px}
+ #potionPanel .mc-potion-titlebar h2{font-size:clamp(22px,2.1vw,32px)}
+ #potionPanel .mc-potion-metrics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+ #potionPanel .mc-potion-metrics>div{padding:9px 12px;min-height:65px}
+ #potionPanel .mc-potion-metrics strong{font-size:clamp(20px,1.9vw,29px);margin-top:4px}
+ #potionPanel .mc-potion-controls{gap:7px;flex-wrap:wrap}
+ #potionPanel .mc-potion-controls button{min-height:30px;padding:5px 8px;font-size:10px}
+ #potionPanel #quickslotLayoutState,#potionPanel #itemTrackingState,#potionPanel #itemsEmpty{margin:5px 0;font-size:10px}
+ #potionPanel .mc-potion-grid{gap:7px}
+ #potionPanel .quickslot-card{padding:9px;gap:6px}
+ #potionPanel .quickslot-card select,#potionPanel .quickslot-card input{min-height:29px}
+ .capture-panel{margin-top:0}
+ .capture-panel>.panel-head{padding:10px 15px}
+ .capture-empty{padding:8px 15px;margin:0 15px 8px}
+ .capture-foot{padding:8px 15px}
+ footer{padding:4px 0 14px}
+}
+@media (min-width:1101px) and (max-height:820px){.chart{height:125px}.middle-grid .panel-head{padding:9px 12px}.stat{min-height:96px}.capture-empty{padding:5px 10px}}

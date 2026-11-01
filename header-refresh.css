@@ -1,0 +1,34 @@
+/* Maple Cartel V1 header refresh — visual only; tracking modules unchanged. */
+html[data-cartel-theme="street"] .shell>aside{grid-template-columns:minmax(350px,460px) 1fr 218px!important;min-height:162px!important;height:162px!important;}
+html[data-cartel-theme="street"] .shell>aside .brand{grid-column:1!important;overflow:visible!important;}
+html[data-cartel-theme="street"] .shell>aside .brand img{width:430px!important;max-width:100%!important;max-height:154px!important;object-fit:contain!important;object-position:left center!important;}
+html[data-cartel-theme="street"] .shell>aside .privacy{grid-column:3!important;}
+html[data-cartel-theme="street"] .shell>.theme-switcher,
+html[data-cartel-theme="monopoly"] .approved-theme{
+  border:1px solid rgba(220,225,221,.22)!important;border-radius:10px!important;
+  background:rgba(20,24,25,.93)!important;box-shadow:0 6px 20px #0003!important;
+  padding:6px 9px 6px 13px!important;gap:10px!important;
+}
+html[data-cartel-theme="street"] .shell>.theme-switcher{width:188px!important;min-width:188px!important;max-width:188px!important;height:42px!important;right:16px!important;top:18px!important;}
+html[data-cartel-theme="monopoly"] .approved-theme{width:204px!important;min-width:204px!important;max-width:204px!important;height:44px!important;}
+html[data-cartel-theme="street"] .shell>.theme-switcher label,
+html[data-cartel-theme="monopoly"] .approved-theme label{
+  font:700 10px/1.2 'DM Sans',Arial,sans-serif!important;letter-spacing:.12em!important;color:#aab9b1!important;
+}
+html[data-cartel-theme="street"] .shell>.theme-switcher select,
+html[data-cartel-theme="monopoly"] .approved-theme select{
+  appearance:auto!important;-webkit-appearance:menulist!important;
+  flex:1 1 auto!important;min-width:0!important;width:auto!important;max-width:none!important;
+  height:29px!important;padding:3px 5px!important;border-radius:6px!important;
+  border:1px solid #4e5b52!important;background:#222a25!important;color:#f6f8f5!important;
+  font:600 12px/1.2 'DM Sans',Arial,sans-serif!important;
+}
+@media(max-width:740px){
+ html[data-cartel-theme="street"] .shell>aside{grid-template-columns:minmax(160px,1fr) 1fr!important;height:142px!important;min-height:142px!important;}
+ html[data-cartel-theme="street"] .shell>aside .brand img{width:300px!important;max-height:130px!important;}
+ html[data-cartel-theme="street"] .shell>.theme-switcher{width:176px!important;min-width:176px!important;max-width:176px!important;top:36px!important;right:6px!important;}
+}
+@media(max-width:440px){
+ html[data-cartel-theme="street"] .shell>aside .brand img{width:205px!important;max-height:120px!important;}
+ html[data-cartel-theme="street"] .shell>.theme-switcher{width:162px!important;min-width:162px!important;max-width:162px!important;top:40px!important;}
+}

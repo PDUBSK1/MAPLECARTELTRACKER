@@ -1,0 +1,39 @@
+/* Last-loaded theme selector fix. Keep the controls fully visible in both themes. */
+html[data-cartel-theme="street"] .shell>.theme-switcher,
+html[data-cartel-theme="monopoly"] .approved-theme {
+  box-sizing:border-box!important; display:flex!important; align-items:center!important; justify-content:flex-start!important;
+  width:252px!important; min-width:252px!important; max-width:252px!important;
+  height:46px!important; min-height:46px!important; padding:7px 9px 7px 12px!important;
+  gap:9px!important; overflow:visible!important; white-space:nowrap!important;
+  background:#171b1b!important; border:1px solid #5a6660!important; border-radius:10px!important;
+  box-shadow:0 5px 14px rgba(0,0,0,.25)!important;
+}
+html[data-cartel-theme="street"] .shell>.theme-switcher {top:16px!important;right:14px!important;left:auto!important;}
+html[data-cartel-theme="monopoly"] .approved-theme {top:18px!important;right:22px!important;left:auto!important;}
+html[data-cartel-theme="street"] .shell>.theme-switcher label,
+html[data-cartel-theme="monopoly"] .approved-theme label {
+  display:block!important;flex:0 0 42px!important; width:42px!important; margin:0!important;
+  font:700 10px/1.2 Arial,sans-serif!important; letter-spacing:.08em!important;
+  color:#ced8d1!important;text-shadow:none!important;
+}
+html[data-cartel-theme="street"] .shell>.theme-switcher select,
+html[data-cartel-theme="monopoly"] .approved-theme select {
+  box-sizing:border-box!important;display:block!important; flex:1 1 0!important;
+  width:0!important; min-width:0!important; max-width:none!important;
+  height:32px!important; padding:3px 28px 3px 10px!important; margin:0!important;
+  border:1px solid #546359!important; border-radius:7px!important;
+  background-color:#28332b!important;color:#fff!important;
+  font:600 13px/1.2 Arial,sans-serif!important; letter-spacing:0!important;
+  appearance:auto!important;-webkit-appearance:menulist!important;
+  text-overflow:ellipsis!important; text-indent:0!important; overflow:hidden!important;
+}
+@media(max-width:740px){
+ html[data-cartel-theme="street"] .shell>.theme-switcher {top:35px!important;right:6px!important;}
+ html[data-cartel-theme="street"] .shell>.theme-switcher,
+ html[data-cartel-theme="monopoly"] .approved-theme {width:224px!important;min-width:224px!important;max-width:224px!important;}
+}
+@media(max-width:440px){
+ html[data-cartel-theme="street"] .shell>.theme-switcher {top:38px!important;right:4px!important;}
+ html[data-cartel-theme="street"] .shell>.theme-switcher,
+ html[data-cartel-theme="monopoly"] .approved-theme {width:210px!important;min-width:210px!important;max-width:210px!important;}
+}

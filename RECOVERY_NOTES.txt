@@ -1,0 +1,7 @@
+Maple Cartel V1 recovered client-side files.
+Recovered from the site's browser Network capture and earlier recovery archive.
+No cookies, authentication headers, HAR request details, or third-party resources included.
+This archive preserves the files retrieved; it is NOT yet a tested, complete development source tree.
+Some OCR runtime/model assets may load only after initiating automatic detection.
+The HP/MP potion feature has NOT yet been integrated into this original source.
+Deploy only after testing automatic EXP, level and potion recognition.

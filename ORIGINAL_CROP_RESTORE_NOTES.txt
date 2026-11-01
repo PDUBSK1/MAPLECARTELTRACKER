@@ -1,0 +1,1 @@
+Restored original upstream quickslot quantity crop geometry only. Preserved diagnostic preview and all other code. Potion usage not yet verified.

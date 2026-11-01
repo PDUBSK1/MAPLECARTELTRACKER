@@ -1,0 +1,17 @@
+/* Goal Timer visual UI only; all recognition files unchanged. */
+.mc-goal-bar{position:absolute!important;left:640px!important;top:282px!important;width:652px!important;height:44px!important;z-index:9!important;background:linear-gradient(115deg,#111b13,#1b2618)!important;color:#eaffd1!important;border:1px solid #b0ec64!important;box-shadow:0 0 0 2px #111!important;display:flex!important;align-items:center!important;justify-content:space-between!important;gap:16px!important;padding:0 17px!important;font:800 17px Inter,Arial,sans-serif!important;cursor:pointer!important;text-align:left!important;white-space:nowrap!important;overflow:hidden!important}
+.mc-goal-bar strong{font-size:18px;color:#c4ff61}.mc-goal-bar>span:nth-child(2){color:#fff;flex:1}.mc-goal-bar>span:last-child{font-size:13px;color:#f4d758}
+.mc-default-goal{display:flex;width:100%;min-height:51px;align-items:center;justify-content:space-between;gap:12px;text-align:left;border:1px solid #8ad64b;background:linear-gradient(90deg,#172319,#131b16);color:#eaffdf;padding:10px 19px;cursor:pointer;border-radius:8px;font:800 13px Inter,Arial,sans-serif;margin:10px 0}
+.mc-default-goal b{font-size:17px;color:#d8ff8a;margin-left:8px}.mc-goal-edit{color:#ffca44!important}
+html[data-cartel-theme="monopoly"] .mc-default-goal{display:none!important}
+html:not([data-cartel-theme="monopoly"]) .mc-goal-bar{display:none!important}
+.mc-goal-dialog{border:2px solid #baff5a;border-radius:14px;max-width:min(480px,95vw);width:460px;background:#101712;color:#fff;box-shadow:0 24px 80px #000a;padding:24px;font:500 14px Inter,Arial,sans-serif}
+.mc-goal-dialog::backdrop{background:#000b}.mc-goal-dialog form{display:grid;gap:18px}.mc-goal-dialog-head{display:flex;justify-content:space-between;align-items:center;color:#cbff7a;font-size:21px}.mc-goal-dialog-head button{background:#222;color:white;border:1px solid #666;padding:7px 13px;border-radius:6px;cursor:pointer}.mc-goal-dialog p{margin:0;color:#ced9c8;line-height:1.6}.mc-goal-dialog label{display:flex;align-items:center;justify-content:space-between;font-weight:700}.mc-goal-dialog input{background:#1c291f;border:1px solid #8abd65;border-radius:7px;color:white;padding:10px;font-size:20px;width:125px}.mc-goal-result{display:grid;gap:10px;background:#1b251c;border:1px solid #4f6d42;padding:14px;border-radius:8px}.mc-goal-result span{display:flex;justify-content:space-between;gap:12px}.mc-goal-result strong{color:#ddff98;text-align:right}.mc-goal-dialog small{color:#a9b5a4;line-height:1.5}.mc-goal-actions{display:flex;justify-content:flex-end;gap:10px}.mc-goal-actions button{background:#253027;color:white;border:1px solid #697368;border-radius:7px;padding:11px 15px;cursor:pointer}.mc-goal-actions #goalSave{background:#b8ff56;color:#122008;font-weight:900;border-color:#b8ff56}
+@media(max-width:750px){.mc-default-goal{flex-wrap:wrap;font-size:11px}.mc-default-goal b{font-size:14px}}
+/* Keep the Default goal summary aligned with the dashboard's full width. */
+html:not([data-cartel-theme="monopoly"]) .mc-default-goal{width:100%!important;max-width:none!important;box-sizing:border-box!important;display:flex!important}
+
+/* Do not duplicate main Time to Level countdown in finish estimate strip. */
+#defaultGoalEta,#monoGoalEta{display:none!important}
+.mc-default-goal{justify-content:space-between!important}
+.mc-goal-bar{justify-content:space-between!important}

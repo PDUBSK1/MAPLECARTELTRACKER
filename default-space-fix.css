@@ -1,0 +1,13 @@
+/* Default theme only: use both dashboard columns; do not edit tracker logic. */
+@media(min-width:1051px){
+ html[data-cartel-theme="street"] main{grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:14px;row-gap:10px;align-items:start}
+ html[data-cartel-theme="street"] main>.middle-grid{grid-column:1;grid-row:auto;align-self:stretch}
+ html[data-cartel-theme="street"] main>#potionPanel{grid-column:2;grid-row:span 2;align-self:stretch}
+ html[data-cartel-theme="street"] main>.capture-panel{grid-column:1;grid-row:auto;align-self:start}
+ html[data-cartel-theme="street"] main>.middle-grid .chart-panel{height:auto;min-height:250px}
+ html[data-cartel-theme="street"] main>.middle-grid .chart{height:160px;flex:none}
+ html[data-cartel-theme="street"] main>.level-panel{padding-top:13px;padding-bottom:13px}
+ html[data-cartel-theme="street"] main>.stats-grid .stat{min-height:91px;padding-top:12px;padding-bottom:12px}
+ html[data-cartel-theme="street"] main>.capture-panel .capture-empty{padding-top:8px;padding-bottom:8px}
+ html[data-cartel-theme="street"] main>footer{grid-column:1/-1}
+}

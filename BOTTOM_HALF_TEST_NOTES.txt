@@ -1,0 +1,1 @@
+Test build: quickslot quantity crop changed to entire bottom 50% of each slot in vendor/maple-track/quickslot-layout.js. EXP-related files and layout are unchanged. Note: wider crop can include icon pixels and is not guaranteed to improve OCR; this build must be tested.

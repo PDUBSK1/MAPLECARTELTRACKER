@@ -1,0 +1,8 @@
+/* Default: theme switcher lives in the left navigation, under the logo. */
+html[data-cartel-theme="street"] .shell>aside{display:flex;flex-direction:column;align-items:stretch}
+html[data-cartel-theme="street"] .shell>aside>.theme-switcher{position:static!important;inset:auto!important;transform:none!important;display:flex!important;align-items:center!important;justify-content:space-between!important;gap:9px!important;margin:7px 12px 15px!important;padding:9px 10px!important;width:auto!important;max-width:none!important;box-sizing:border-box!important;background:linear-gradient(125deg,#292334,#11171b)!important;border:1px solid #d3b268!important;border-radius:12px!important;box-shadow:0 3px 0 #0006!important;z-index:2!important}
+html[data-cartel-theme="street"] .shell>aside>.theme-switcher label{color:#ffe2a3!important;font:900 10px Inter,Arial,sans-serif!important;letter-spacing:.05em!important;white-space:nowrap!important}
+html[data-cartel-theme="street"] .shell>aside>.theme-switcher select{min-width:0!important;width:100%!important;max-width:119px!important;border-radius:8px!important;background:#111817!important;color:#fff!important;border:1px solid #79b65b!important;padding:8px 6px!important;font:800 12px Inter,Arial,sans-serif!important;cursor:pointer!important}
+html[data-cartel-theme="street"] main{padding-top:14px!important}
+html[data-cartel-theme="monopoly"] .shell>aside>.theme-switcher{display:none!important}
+@media(max-width:900px){html[data-cartel-theme="street"] .shell>aside>.theme-switcher{margin:8px!important;max-width:230px!important}}

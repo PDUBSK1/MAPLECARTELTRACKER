@@ -1,0 +1,12 @@
+Maple Cartel V1 - original quickslot recognizer diagnostic patch
+
+Only vendor/maple-track/quickslot-ocr.js has been changed.
+Adds exported diagnoseSlot(image) to inspect raw candidate guesses and rejection reasons.
+Original recognizeSlot(image), EXP tracking, layout, and accepted-count rules are unchanged.
+
+Confirmed on user-provided 64x24 samples:
+- Actual 386: original reader rejects; best 3-digit raw candidate 306 (error 0.1903).
+- Actual 420: original reader rejects; a raw 3-digit candidate is 490 (error 0.1987).
+Both fail 0.08 error threshold. Loosening that threshold would accept wrong readings.
+
+This is a diagnostic patch, NOT a functioning potion-recognition fix. Do not deploy it to replace a working website. No in-game tests have been performed.

@@ -1,0 +1,62 @@
+/* Maple Cartel V1 — Monopoly UI cleanup (presentation-only). No tracker changes. */
+/* Preserve original illustrated edges, remove accidental black data rectangles. */
+html[data-cartel-theme="monopoly"] .approved-artboard{background:#111815}
+html[data-cartel-theme="monopoly"] .approved-controls,
+html[data-cartel-theme="monopoly"] .approved-theme,
+html[data-cartel-theme="monopoly"] .approved-live{z-index:4}
+.approved-live{left:96px;top:282px;width:137px;height:44px;display:flex;align-items:center;justify-content:center;gap:11px;background:linear-gradient(115deg,#1a2419 0%,#111612 65%,#1d2916 100%);border:2px solid #a6fa4b;clip-path:polygon(6% 0,100% 0,96% 100%,0 92%);box-shadow:inset 0 0 0 1px #050b06}
+.approved-live strong{font-size:24px;line-height:1;color:#f9fff0;font-weight:1000;letter-spacing:.04em;text-shadow:2px 2px #020504}
+.approved-live-dot{width:15px;height:15px;flex:none;background:#7e8980;border:2px solid #bed5a9;border-radius:50%;box-shadow:0 0 0 3px #1d2922}
+.approved-live.is-active .approved-live-dot{background:#aaff36;box-shadow:0 0 0 3px #335720,0 0 10px #a6fc58}
+.approved-live:not(.is-active){opacity:.78}
+.approved-controls{left:260px!important;top:280px!important;height:48px!important;width:auto!important;display:flex!important;align-items:center!important;gap:11px!important;padding:0!important;margin:0!important;transform:none!important;background:none!important;border:0!important;box-shadow:none!important}
+.approved-controls:before{content:none!important;display:none!important}
+.approved-controls .approved-button{height:39px;line-height:1.1;font:950 17px Inter,Arial,sans-serif!important;padding:7px 19px!important;transform:skew(-6deg);border-radius:3px!important;border-width:2px;box-shadow:inset 0 2px 0 #ffffff40,2px 3px 0 #000!important;min-width:118px}
+.approved-controls .approved-button.start{min-width:233px;background:linear-gradient(130deg,#dfff63,#a8f32f)!important;color:#101909!important;border-color:#efffd0!important}
+.approved-controls .approved-button.stop{background:linear-gradient(130deg,#4a282b,#231b1d)!important;color:#fff0f0!important;border-color:#ff737d!important}
+.approved-controls .approved-button.reset{background:linear-gradient(130deg,#323a36,#181e1c)!important;border-color:#c2c9be!important}
+.approved-theme{left:1320px!important;top:281px!important;width:258px;height:45px;min-height:0!important;display:flex!important;align-items:center!important;justify-content:space-between;gap:9px!important;padding:4px 9px!important;background:linear-gradient(115deg,#171a15,#080e0c)!important;border:2px solid #f2d653!important;border-radius:3px;box-shadow:inset 0 0 0 1px #fff2a022!important;transform:skew(-5deg)}
+.approved-theme label{font:950 14px Inter,Arial,sans-serif!important;color:#fce676!important;letter-spacing:.02em!important}
+.approved-theme select{flex:1;min-width:0!important;max-width:145px;height:33px!important;padding:2px 6px!important;border:0!important;outline:0;background:#0c1211!important;color:#f4f9e9!important;font:900 16px Inter,Arial,sans-serif!important;cursor:pointer;transform:skew(5deg)}
+/* Avoid duplicated session label / theme positions, but preserve source DOM for the bridge. */
+html[data-cartel-theme="monopoly"] .approved-status-title,
+html[data-cartel-theme="monopoly"] .approved-status-detail,
+html[data-cartel-theme="monopoly"] .approved-status-badge{display:none!important}
+/* Chart now fills its illustrated frame rather than appearing as a black rectangle with its own border. */
+.approved-chart{left:118px!important;top:603px!important;width:741px!important;height:241px!important;background:linear-gradient(180deg,#131d1a 0%,#0b1412 100%)!important;border:0!important;box-shadow:inset 0 0 18px #28352b5c!important;border-radius:2px;clip-path:polygon(0 1%,99.5% 0,100% 99%,0 100%)}
+.approved-chart-caption{top:845px!important;left:123px!important;width:724px!important;background:transparent!important}
+/* Matching row heights and positions, with no hard dark borders or uneven interior gaps. */
+.approved-potion-row{left:1020px!important;width:567px!important;height:71px!important;display:grid!important;grid-template-columns:minmax(0,1.6fr) minmax(0,.63fr) minmax(0,.82fr) minmax(0,.66fr);align-items:center!important;gap:7px!important;padding:6px 11px!important;background:linear-gradient(90deg,#14211b 0%,#101b18 43%,#14201b 100%)!important;border:0!important;border-radius:2px;box-shadow:inset 0 -1px 0 #98bb92aa!important}
+.approved-potion-row.hp{top:605px!important}
+.approved-potion-row.mp{top:681px!important}
+.approved-potion-row .tag{min-width:0!important;font-size:21px!important;overflow:hidden;text-overflow:ellipsis}
+.approved-potion-row small{font-size:14px!important;color:#aef071!important}
+.approved-potion-row>span:nth-child(3){font-size:12px!important;color:#c0d5c2!important;text-align:right}
+.approved-potion-row strong{font-size:26px!important;text-align:right}
+.approved-totalhour{left:1116px!important;top:763px!important;width:451px!important;height:35px!important;align-items:center!important;padding:4px 11px!important;background:linear-gradient(90deg,transparent,#17231b 20%,#101a15 100%)!important;border-top:1px solid #b0cda458;border-bottom:1px solid #b0cda458;gap:12px!important;white-space:nowrap}
+.approved-totalhour strong{font-size:25px!important}
+.approved-footer-data{left:1019px!important;top:802px!important;width:340px!important;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background:transparent!important;color:#c7dabb!important}
+.approved-money-spent{top:818px!important}
+.approved-settings-button,.approved-capture-button{top:899px!important}
+/* All effects static by design. */
+html[data-cartel-theme="monopoly"] .monopoly-experience *,
+html[data-cartel-theme="monopoly"] .monopoly-experience *:before,
+html[data-cartel-theme="monopoly"] .monopoly-experience *:after{animation:none!important;transition:none!important}
+
+/* Make the illustrated canvas immersive at screens wider/taller than the artwork. */
+html[data-cartel-theme="monopoly"] .monopoly-experience{background:#20201d!important;isolation:isolate}
+html[data-cartel-theme="monopoly"] .monopoly-experience::before{content:"";position:absolute;inset:-55px;z-index:-1;pointer-events:none;background:url("art/monopoly/approved-full.webp") center center/cover no-repeat;filter:blur(32px) brightness(.57) saturate(.9)}
+/* Soft edge lighting instead of solid black fields on the data. */
+.approved-number.exp-gain,.approved-number.eta,.approved-number.spent{background:linear-gradient(90deg,#111b18e0 5%,#111b18a8 78%,transparent 100%);border-radius:7px;overflow:visible!important;text-shadow:2px 2px #070a09;padding-left:3px}
+.approved-number.spent{background:linear-gradient(90deg,transparent,#111b18c2 16%,#111b18c2 86%,transparent);padding:0}
+.approved-potion-row{background:linear-gradient(90deg,#121c18fa 0%,#13211cf1 56%,#121d1af0 100%)!important;clip-path:polygon(0 2%,100% 0,99.7% 99%,0 100%)}
+.approved-chart{background:linear-gradient(90deg,#131d18e9,#0e1813ec)!important}
+
+/* Remove a second, unwanted black rectangular cutout beneath the potion usage rows. */
+.approved-potion-row.mp{height:74px!important}
+.approved-footer-data{top:798px!important}
+/* At 1366x768 the chart and potion ledger share the same top and bottom edges. */
+.approved-chart,.approved-potion-row,.approved-totalhour{outline:0!important}
+
+.approved-potion-row .tag{background:none!important;border:0!important;box-shadow:none!important;padding:0!important;letter-spacing:.01em}
+.approved-controls .approved-button.start:disabled{opacity:.8!important;background:linear-gradient(130deg,#d4ef79,#7fae4b)!important;color:#15230c!important}

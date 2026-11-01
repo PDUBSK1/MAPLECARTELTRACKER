@@ -1,0 +1,11 @@
+Run this in the extracted website folder (desktop Python 3):
+  python fetch-upstream.py
+
+It downloads original quickslot source modules and OCR assets from
+https://github.com/dwlim/maple-exp-tracker
+
+This package is a SOURCE RECOVERY / PRE-INTEGRATION package.
+The quickslot modules are NOT yet wired into Maple Cartel capture.
+Do NOT publish this archive as your finished replacement.
+It does NOT assert permission to republish upstream source.
+Review the upstream repository licensing and your permission before publishing.

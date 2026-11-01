@@ -1,0 +1,1 @@
+Fixes blank quantity diagnostic by converting the raw crop into browser ImageData before drawing. No EXP, layout, OCR recognition, accounting or design changes. This is a diagnostic fix, NOT yet a potion counting fix.

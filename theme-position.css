@@ -1,0 +1,8 @@
+/* One theme control per active theme; positioned at top right, outside the stats. */
+html[data-cartel-theme="street"] main{position:relative!important;padding-top:66px!important}
+html[data-cartel-theme="street"] main>.theme-switcher{position:absolute!important;top:10px!important;right:14px!important;left:auto!important;grid-column:auto!important;grid-row:auto!important;z-index:90!important;width:max-content!important;max-width:calc(100% - 28px)!important;justify-self:auto!important;margin:0!important;padding:7px 12px!important}
+html[data-cartel-theme="street"] main>.heading{padding-top:0!important}
+html[data-cartel-theme="monopoly"] .approved-theme{left:auto!important;right:26px!important;top:18px!important;width:287px!important;height:48px!important;z-index:80!important;box-sizing:border-box!important}
+html[data-cartel-theme="monopoly"] .approved-theme label{white-space:nowrap!important;font-size:11px!important;letter-spacing:1px!important}
+html[data-cartel-theme="monopoly"] .approved-theme select{min-width:0!important;flex:1!important}
+@media(max-width:800px){html[data-cartel-theme="street"] main{padding-top:72px!important}}

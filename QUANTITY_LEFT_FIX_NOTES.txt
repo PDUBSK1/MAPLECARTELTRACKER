@@ -1,0 +1,1 @@
+Potion quantity crop moved to the bottom-left of each quickslot, based on user screenshot. Preserves existing EXP tracker, styling and conservative OCR rejection of uncertain values. The 5-second count uses verified stack decreases only. Not verified live.

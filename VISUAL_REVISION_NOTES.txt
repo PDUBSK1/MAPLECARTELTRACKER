@@ -1,0 +1,1 @@
+Monopoly graphic-frame revision: irregular sticker, poster, comic and golden panel outlines, restored Default wordmark size. No JS files changed. Default loads first. OCR Diagnostics remain hidden.

@@ -1,0 +1,1 @@
+This is a DIAGNOSTIC build, not a verified fix. Start a local HTTP server in this folder, share the game window, expand Quantity OCR diagnostics under Potion Ledger, and select slot 4 or 8. Use Download crop PNG to save the exact pixels passed to OCR. No full-screen image is uploaded. Original EXP logic not changed.

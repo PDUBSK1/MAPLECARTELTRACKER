@@ -1,0 +1,66 @@
+{
+  "visual_render": "Isolated Chromium set_content of actual HTML/CSS/assets, with user-facing sample values injected solely in test",
+  "resolution_previews": [
+    "1440x900",
+    "1366x768"
+  ],
+  "desktop_scroll_at_1440x900": false,
+  "desktop_scroll_at_1366x768": false,
+  "generated_screenshot_not_ai": true,
+  "core_scripts_preserved_byte_for_byte": true,
+  "preserved_existing_js_and_mjs_count": 27,
+  "preserved_files": {
+    "vision.mjs": "539ad5df8b7162d994317d5ffd97a9007bc46d8a96d8f2142233d3d6561fa7fc",
+    "potion-tracker.mjs": "c431c9c96babfb8ffbe9e5fbf4d5e840088b2ed91000409e086aab222e5882f9",
+    "app.mjs": "7c10f34d18b7ccbee3dae05b85570c6cbbedef67dbcdd6987ee1a6b9e32dd416",
+    "quantity-diagnostic.js": "4e077fb5ec7086b19de2896f0700acd195a8899f2b1abd9e3ac781ddb4ce96a0",
+    "theme-picker.js": "104fef9545f134b1d5a46cc65ae6b605a1c44c6ae8f5a0cb67dd3b18db8ef48a",
+    "potion-panel.mjs": "932e18c1ea1b4e0c7081160e157a4e89cf53be42eff8854e729b8a7d5f9f451d",
+    "core.mjs": "bf39d56c0761e00c9cc7ba321deb76fc2b33dc2b1e9a2cb914c91bb158b12d50",
+    "assets/ocr/tesseract-core-lstm.wasm.js": "eef5f8b2f8e20e150680b20adaec4a60babafee3adbe8a94583c81fee46e8680",
+    "assets/ocr/worker.min.js": "576b7df7e3393e137e51849357c9adb53fe7ac1bb69bfa06cf3d61520f182c6d",
+    "assets/ocr/tesseract-core-simd-lstm.wasm.js": "c58b46a4c796c0b8afccf77591d5b875b6896b45d402bbce8caa6f5362447b38",
+    "assets/ocr/tesseract-core-relaxedsimd-lstm.wasm.js": "861a536cf9ef8e63cb644d57bab39c388f37f7d6b6f60024b741c5f6b39a59b3",
+    "assets/ocr/tesseract.min.js": "000c27d9cd0def655f77b36c72a389c0ab13793aa31cb4d7aab56d09c0afbc7e",
+    "vendor/maple-track/quickslot-icon.js": "f4f8aa9854e0d305eeefc8b715b0d88af5dc9b917b3cd2d467db714f20ee511d",
+    "vendor/maple-track/quickslot-layout.js": "3f73abd5326dcc22f7e1893d1d44272d983c010b171ab90badcea04d25d1d0b3",
+    "vendor/maple-track/quickslots.js": "71b4c9c53d5c7e77f9fc6fb1a75d8e8c218bad9a65f4f0fced18e5a12e8dd96e",
+    "vendor/maple-track/recognition.js": "2216419e8f861d54e6340887610e732e3966f123c9410f0b4bdf525a800df26c",
+    "vendor/maple-track/level-ocr.js": "73e43a6fc70ad865d09ba0f57b161c5f171aa3fba0caa2d31dada80f9503fee2",
+    "vendor/maple-track/hud-ocr.js": "b0e9657355f27ef238c5d70dd145aa8b93e2d7d77d49d93b12060f454d2776a8",
+    "vendor/maple-track/session.js": "7c5e519e2226a50a81a10b925f84fc265bdc42ecad672ad320983b731a46279d",
+    "vendor/maple-track/local-ocr.js": "99466a8e7e87c3dc8cf9a2d647c6177c5802a0623b509dd8a6b4dd443b91d488",
+    "vendor/maple-track/quickslot-font.js": "8bfcf5bb01138f44ec76aabd170b42a1c62532edf776c820983bf3a2bd97e7a7",
+    "vendor/maple-track/hud-regions.js": "fb820fdaa085a749517c75c1afca8a64f7773e87f7ed8d681c4d583d10d04e8f",
+    "vendor/maple-track/quickslot-ocr.js": "ca0c88ae09ff2376ab1a0ce53d223de14fcc4efbf27784bff1ad7509279f403f",
+    "vendor/maple-track/quickslot-small.js": "a710a85c9f2eac881481de86c17a583dd5894e691a280f2592f335efb6c6ea07",
+    "vendor/maple-track/quickslot-session.js": "8629c5a553dd6b0e5531e1aa63df22735efebb3d7a15cd517535552bce1d252a",
+    "vendor/maple-track/quickslot-worker.js": "531081ca4293e3edb4bc15173f82c13128226eed9c1a130774b22f0763e8d231",
+    "vendor/maple-track/potion-costs.js": "e92703e5afe2d2c37229f381d09299693b671e7f3a9d94cffb415139950c3422"
+  },
+  "visual_bridge_smoke_tests": {
+    "live_value_mirroring": "pass",
+    "chart_mirror": "pass",
+    "theme_switching": "pass",
+    "start_button_proxy_when_enabled": "pass",
+    "default_slots_dialog_open": "pass",
+    "quickslot_dom_relocation": "pass",
+    "capture_detail_toggle": "pass",
+    "svg_and_webp_assets_loaded": "pass",
+    "browser_errors_in_isolated_render": [],
+    "HP_MP_used_counts_read_only_mirror": "pass with simulated original quickslot DOM cards",
+    "quickslot_dialog_close_restores_original_DOM": "pass"
+  },
+  "untested": [
+    "Actual getDisplayMedia in local user Chrome",
+    "Live MapleStory capture and OCR",
+    "High-resolution OCR",
+    "Full mobile layout usability"
+  ],
+  "design_limitation": "High-fidelity Monopoly uses original approved flattened art as base with independently authored masking + HTML data layers, not fully independent frame artwork",
+  "render_files": [
+    "PREVIEWS/monopoly-1366x768-visual-test.png",
+    "PREVIEWS/monopoly-1440x900-visual-test.png",
+    "PREVIEWS/default-visual-test.png"
+  ]
+}
